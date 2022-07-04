@@ -20,25 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c816bfc-d304-4255-aed9-0eebc8671866" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_processing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_train.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/example_gold.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/example_pred.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inference_model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loss_function/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metrics/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_processing/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing/data_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference_model/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference_model/inference.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loss_function/loss_fun.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss_function/loss_fun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_model/globalpointer_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_model/globalpointer_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/train_config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loss_function/rdrop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -290,7 +275,7 @@
       <workItem from="1656312585019" duration="9157000" />
       <workItem from="1656471859237" duration="11732000" />
       <workItem from="1656598684470" duration="1698000" />
-      <workItem from="1656726786589" duration="5503000" />
+      <workItem from="1656726786589" duration="6631000" />
     </task>
     <servers />
   </component>
@@ -323,6 +308,14 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="162" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1656726799543" />
+    <state x="617" y="306" key="Github.ShareDialog" timestamp="1656922165679">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="617" y="306" key="Github.ShareDialog/0.0.1536.816@0.0.1536.816" timestamp="1656922165679" />
+    <state x="670" y="111" key="Github.UntrackedFilesDialog" timestamp="1656922204329">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="670" y="111" key="Github.UntrackedFilesDialog/0.0.1536.816@0.0.1536.816" timestamp="1656922204329" />
     <state width="1491" height="355" key="GridCell.Tab.0.bottom" timestamp="1656065000749">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
