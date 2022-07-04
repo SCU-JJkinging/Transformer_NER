@@ -1,0 +1,2 @@
+Epoch:1	train_loss:0.619386	val_loss:0.074937	val_f1:0.57617
+Epoch:1	train_loss:0.224068	

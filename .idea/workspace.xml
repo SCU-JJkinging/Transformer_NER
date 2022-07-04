@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1c816bfc-d304-4255-aed9-0eebc8671866" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data_processing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/CMeEE_train.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/example_gold.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CMeEE/example_pred.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inference_model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loss_function/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/metrics/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inference_model/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference_model/inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loss_function/loss_fun.py" beforeDir="false" afterPath="$PROJECT_DIR$/loss_function/loss_fun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_model/globalpointer_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_model/globalpointer_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/train_config/config.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="14c024bb-25ae-4722-b739-c2014c195f9d" />
+  <component name="ProjectId" id="2AbJd40XzM5VW5Ck0ZUF6NDVanl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../news_sematic_retrieval" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python_project\Transformer_NER\train_config" />
+      <recent name="E:\python_project\Transformer_NER\run_model" />
+      <recent name="E:\python_project\Efficient_GlobalPointer\train_config" />
+      <recent name="E:\python_project\Efficient_GlobalPointer\run_model" />
+      <recent name="E:\python_project\Efficient_GlobalPointer\loss_function" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.span_v2_train">
+    <configuration name="crf_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_model/crf_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="globalpointer_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_model/globalpointer_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="globalpointer_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\python_project\Efficient_GlobalPointer\run_model\globalpointer_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="globalpointer_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\python_project\Efficient_GlobalPointer\run_model\globalpointer_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="span_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_model/span_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="span_v2_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run_model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_model/span_v2_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Efficient_GlobalPointer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.span_v2_train" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.globalpointer_train" />
+        <item itemvalue="Python.span_train" />
+        <item itemvalue="Python.crf_train" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c816bfc-d304-4255-aed9-0eebc8671866" name="Default Changelist" comment="" />
+      <created>1655272434683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655272434683</updated>
+      <workItem from="1655272435871" duration="14039000" />
+      <workItem from="1655300566864" duration="8781000" />
+      <workItem from="1655340429027" duration="18668000" />
+      <workItem from="1655381593251" duration="112000" />
+      <workItem from="1655381716101" duration="73000" />
+      <workItem from="1655381790956" duration="258000" />
+      <workItem from="1655382059992" duration="13058000" />
+      <workItem from="1655395880954" duration="6150000" />
+      <workItem from="1655431273073" duration="13509000" />
+      <workItem from="1655450696452" duration="14782000" />
+      <workItem from="1655483402327" duration="921000" />
+      <workItem from="1655484758291" duration="1530000" />
+      <workItem from="1655519589559" duration="6995000" />
+      <workItem from="1655692437353" duration="7000" />
+      <workItem from="1655692797330" duration="14717000" />
+      <workItem from="1655730774785" duration="9785000" />
+      <workItem from="1655772494396" duration="43867000" />
+      <workItem from="1655888529856" duration="8211000" />
+      <workItem from="1655965471295" duration="8842000" />
+      <workItem from="1655974937214" duration="29176000" />
+      <workItem from="1656312413856" duration="17000" />
+      <workItem from="1656312585019" duration="9157000" />
+      <workItem from="1656471859237" duration="11732000" />
+      <workItem from="1656598684470" duration="1698000" />
+      <workItem from="1656726786589" duration="5503000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="498" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1655480457211">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="498" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1655480457211" />
+    <state x="548" y="162" key="FileChooserDialogImpl" timestamp="1656726799543">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="548" y="162" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1656726799543" />
+    <state width="1491" height="355" key="GridCell.Tab.0.bottom" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.0.center" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.0.left" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.0.right" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.1.bottom" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.1.center" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.1.left" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state width="1491" height="355" key="GridCell.Tab.1.right" timestamp="1656065000749">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1491" height="355" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1656065000749" />
+    <state x="140" y="62" width="998" height="707" key="SettingsEditor" timestamp="1656921731500">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="140" y="62" width="998" height="707" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1656921731500" />
+    <state width="775" height="415" key="XDebugger.FullValuePopup" timestamp="1656062835407">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="775" height="415" key="XDebugger.FullValuePopup/0.0.1536.816@0.0.1536.816" timestamp="1656062835407" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1655796521505">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1655796521505" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$models.coverage" NAME="models Coverage Results" MODIFIED="1655382376208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/DevelopmentSoftware/anaconda3/Lib/site-packages/requests" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$softmax_train.coverage" NAME="softmax_train Coverage Results" MODIFIED="1655892914036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$test.coverage" NAME="test Coverage Results" MODIFIED="1655479187562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$crf_train.coverage" NAME="crf_train Coverage Results" MODIFIED="1655482823051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$model.coverage" NAME="model Coverage Results" MODIFIED="1655382389716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$train_eval_util.coverage" NAME="train_eval_util Coverage Results" MODIFIED="1655382385438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1655382393512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_processing" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$globalpointer_train_tmp__1_.coverage" NAME="globalpointer_train_tmp (1) Coverage Results" MODIFIED="1655400358259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$softmax_train.coverage" NAME="softmax_train Coverage Results" MODIFIED="1655573602963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$span_train.coverage" NAME="span_train Coverage Results" MODIFIED="1655967467327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$globalpointer_train.coverage" NAME="globalpointer_train Coverage Results" MODIFIED="1656000905202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$test.coverage" NAME="test Coverage Results" MODIFIED="1656054989044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer_2$crf_train.coverage" NAME="crf_train Coverage Results" MODIFIED="1655484617316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$globalpointer_util.coverage" NAME="globalpointer_util Coverage Results" MODIFIED="1655453140304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$config.coverage" NAME="config Coverage Results" MODIFIED="1655382370570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_config" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$span_v2_train.coverage" NAME="span_v2_train Coverage Results" MODIFIED="1656062090946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Efficient_GlobalPointer$globalpointer_train.coverage" NAME="globalpointer_train Coverage Results" MODIFIED="1655479250246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+    <SUITE FILE_PATH="coverage/Transformer_NER$crf_train.coverage" NAME="crf_train Coverage Results" MODIFIED="1655894983335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/run_model" />
+  </component>
+</project>

@@ -1,0 +1,60 @@
+原始
+Epoch:1	train_loss:338.123347	val_loss:12.696121	val_f1:0.621242
+Epoch:2	train_loss:145.663497	val_loss:9.025419	val_f1:0.63536
+Epoch:3	train_loss:102.498127	val_loss:8.982605	val_f1:0.636826
+Epoch:4	train_loss:80.635769	val_loss:8.252202	val_f1:0.638614
+Epoch:5	train_loss:65.290909	val_loss:8.543842	val_f1:0.630513
+Epoch:6	train_loss:53.056857	val_loss:9.078846	val_f1:0.632008
+Epoch:7	train_loss:43.976722	val_loss:9.687439	val_f1:0.632692
+Epoch:8	train_loss:36.787014	val_loss:10.295464	val_f1:0.635427
+Epoch:9	train_loss:31.428973	val_loss:10.849705	val_f1:0.634618
+Epoch:10	train_loss:27.764353	val_loss:11.25944	val_f1:0.633575
+
+FGM
+Epoch:1	train_loss:326.759197	val_loss:12.255697	val_f1:0.619391
+Epoch:2	train_loss:142.87356	val_loss:8.438096	val_f1:0.639046
+Epoch:3	train_loss:102.657441	val_loss:8.037355	val_f1:0.639889
+Epoch:4	train_loss:82.135859	val_loss:7.61572	val_f1:0.636667
+Epoch:5	train_loss:67.086912	val_loss:7.393156	val_f1:0.634132
+Epoch:6	train_loss:54.454286	val_loss:7.614168	val_f1:0.642565
+Epoch:7	train_loss:44.474904	val_loss:8.166586	val_f1:0.641239
+Epoch:8	train_loss:36.731683	val_loss:8.458241	val_f1:0.642499
+Epoch:9	train_loss:30.895687	val_loss:8.966676	val_f1:0.642994
+Epoch:10	train_loss:27.271116	val_loss:9.184921	val_f1:0.641394
+
+PGD
+
+Epoch:1	train_loss:327.355266	val_loss:12.181384	val_f1:0.62112
+Epoch:2	train_loss:142.619028	val_loss:8.407036	val_f1:0.640743
+Epoch:3	train_loss:102.630968	val_loss:8.211022	val_f1:0.637065
+Epoch:4	train_loss:81.632235	val_loss:7.507381	val_f1:0.638749
+Epoch:5	train_loss:66.486134	val_loss:7.452366	val_f1:0.633895
+Epoch:6	train_loss:53.817193	val_loss:7.683809	val_f1:0.640058
+Epoch:7	train_loss:43.642646	val_loss:8.205268	val_f1:0.638048
+Epoch:8	train_loss:36.04781	val_loss:8.562375	val_f1:0.637752
+Epoch:9	train_loss:30.307599	val_loss:9.279004	val_f1:0.637651
+Epoch:10	train_loss:26.565908	val_loss:9.470692	val_f1:0.636752
+
+原始 O: 0
+Epoch:1	train_loss:337.58586	val_loss:12.462405	val_f1:0.618413
+Epoch:2	train_loss:143.911122	val_loss:9.211964	val_f1:0.638732
+Epoch:3	train_loss:102.306328	val_loss:8.311495	val_f1:0.637582
+Epoch:4	train_loss:81.166985	val_loss:8.665844	val_f1:0.636108
+Epoch:5	train_loss:65.730155	val_loss:8.488894	val_f1:0.637085
+Epoch:6	train_loss:53.083743	val_loss:9.220011	val_f1:0.640337
+Epoch:7	train_loss:43.781025	val_loss:9.153194	val_f1:0.63308
+Epoch:8	train_loss:36.994064	val_loss:10.168459	val_f1:0.63494
+Epoch:9	train_loss:31.371666	val_loss:10.762686	val_f1:0.637254
+Epoch:10	train_loss:28.079065	val_loss:11.046637	val_f1:0.634966
+
+FGM O: 0
+Epoch:1	train_loss:324.940174	val_loss:11.825169	val_f1:0.620661
+Epoch:2	train_loss:141.4966	val_loss:8.918539	val_f1:0.635116
+Epoch:3	train_loss:102.601783	val_loss:7.561977	val_f1:0.643666
+Epoch:4	train_loss:82.02951	val_loss:7.683781	val_f1:0.642143
+Epoch:5	train_loss:66.924566	val_loss:7.648276	val_f1:0.639768
+Epoch:6	train_loss:54.72781	val_loss:7.714179	val_f1:0.647415
+Epoch:7	train_loss:44.660693	val_loss:7.910797	val_f1:0.637057
+Epoch:8	train_loss:36.663281	val_loss:8.570012	val_f1:0.640855
+Epoch:9	train_loss:31.193244	val_loss:8.930063	val_f1:0.640469
+Epoch:10	train_loss:27.547396	val_loss:9.262659	val_f1:0.640143
