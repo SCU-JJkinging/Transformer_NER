@@ -15,7 +15,7 @@ class Config(object):
         self.out_file = 'CMeEE_test.json'
         self.lr = 2e-5
         self.max_len = 256
-        self.batch_size = 8
+        self.batch_size = 4
         self.epochs = 10
         self.head_size = 64
         self.hidden_size = 768
@@ -24,15 +24,18 @@ class Config(object):
         self.clip_norm = 0.25
         self.dim_in = 768
         self.dim_hid = 768
-        self.do_adv = 'FGM'
+        self.do_adv = None
         self.use_fp16 = True
         self.checkpoint = None
         self.patience = 10
         self.accumulate_step = 1
         self.dropout_num = 4
         self.dropout_rate = 0.1
-        self.is_multi_sample_dropout = True
+        self.is_multi_sample_dropout = False
         self.is_avg = False  # multi-sample dropout是否对输出做平均
+        self.rdrop_coef = 5
+        self.rdrop_rate = 0.3
+        self.is_R_drop = True
 
     def update(self, **kwargs):
         for k, v in kwargs.items():

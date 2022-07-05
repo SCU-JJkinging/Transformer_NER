@@ -68,9 +68,9 @@ def main():
         valid_losses = checkpoint["valid_loss"]
 
     # Compute loss and accuracy before starting (or resuming) training.
-    val_time, val_loss, val_f1 = evaluate(val_dataloader, global_pointer_crossentropy, model)
-
-    print("-> Valid time: {:.4f}s loss = {:.6f} val_f1: {:.6f}".format(val_time, val_loss, val_f1))
+    # val_time, val_loss, val_f1 = evaluate(val_dataloader, global_pointer_crossentropy, model)
+    #
+    # print("-> Valid time: {:.4f}s loss = {:.6f} val_f1: {:.6f}".format(val_time, val_loss, val_f1))
 
     # -------------------- Training epochs ------------------- #
     print("\n",

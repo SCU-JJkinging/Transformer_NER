@@ -42,11 +42,21 @@ def train(dataloader, model, loss_func, optimizer, scheduler):
         label = batch[2].to(device)
         if config.use_fp16:
             with autocast():
-                pred = model(input_ids, attention_mask)
-                loss = loss_func(label, pred) / config.accumulate_step
+                if config.is_R_drop:
+                    pred, kl_loss = model(input_ids, attention_mask, do_evaluate=False)
+                    loss = loss_func(label, pred) / config.accumulate_step
+                    loss = loss + kl_loss * config.rdrop_coef
+                else:
+                    pred = model(input_ids, attention_mask, do_evaluate=False)
+                    loss = loss_func(label, pred) / config.accumulate_step
         else:
-            pred = model(input_ids, attention_mask)
-            loss = loss_func(label, pred) / config.accumulate_step
+            if config.is_R_drop:
+                pred, kl_loss = model(input_ids, attention_mask, do_evaluate=False)
+                loss = loss_func(label, pred) / config.accumulate_step
+                loss = loss + kl_loss * config.rdrop_coef
+            else:
+                pred = model(input_ids, attention_mask, do_evaluate=False)
+                loss = loss_func(label, pred) / config.accumulate_step
         num, den = global_pointer_f1_score(label, pred)
         total_n += num
         total_d += den
@@ -58,11 +68,19 @@ def train(dataloader, model, loss_func, optimizer, scheduler):
             adversial.attack()
             if config.use_fp16:
                 with autocast():
-                    pred_adv = model(input_ids, attention_mask)
-                    loss_adv = loss_func(label, pred_adv) / config.accumulate_step
+                    if config.is_R_drop:
+                        pred_adv, _ = model(input_ids, attention_mask)
+                        loss_adv = loss_func(label, pred_adv)
+                    else:
+                        pred_adv = model(input_ids, attention_mask)
+                        loss_adv = loss_func(label, pred_adv)
             else:
-                pred_adv = model(input_ids, attention_mask)
-                loss_adv = loss_func(label, pred_adv) / config.accumulate_step
+                if config.is_R_drop:
+                    pred_adv, _ = model(input_ids, attention_mask)
+                    loss_adv = loss_func(label, pred_adv)
+                else:
+                    pred_adv = model(input_ids, attention_mask)
+                    loss_adv = loss_func(label, pred_adv)
             if config.use_fp16:
                 scaler.scale(loss_adv).backward()
             else:
@@ -78,11 +96,19 @@ def train(dataloader, model, loss_func, optimizer, scheduler):
                     adversial.restore_grad()
                 if config.use_fp16:
                     with autocast():
-                        pred_adv = model(input_ids, attention_mask)
-                        loss_adv = loss_func(label, pred_adv) / config.accumulate_step
+                        if config.is_R_drop:
+                            pred_adv, _ = model(input_ids, attention_mask)
+                            loss_adv = loss_func(label, pred_adv)
+                        else:
+                            pred_adv = model(input_ids, attention_mask)
+                            loss_adv = loss_func(label, pred_adv)
                 else:
-                    pred_adv = model(input_ids, attention_mask)
-                    loss_adv = loss_func(label, pred_adv) / config.accumulate_step
+                    if config.is_R_drop:
+                        pred_adv, _ = model(input_ids, attention_mask)
+                        loss_adv = loss_func(label, pred_adv)
+                    else:
+                        pred_adv = model(input_ids, attention_mask)
+                        loss_adv = loss_func(label, pred_adv)
 
                 if config.use_fp16:
                     scaler.scale(loss_adv).backward()
@@ -120,6 +146,7 @@ def train(dataloader, model, loss_func, optimizer, scheduler):
 
 
 def evaluate(dataloader, loss_func, model):
+    config = Config()
     device = model.device
     size = len(dataloader.dataset)
     model.eval()
@@ -132,7 +159,10 @@ def evaluate(dataloader, loss_func, model):
             input_ids = data[0].to(device)
             attention_mask = data[1].to(device)
             label = data[2].to(device)
-            pred = model(input_ids, attention_mask)
+            if config.is_R_drop:
+                pred, _ = model(input_ids, attention_mask, do_evaluate=True)
+            else:
+                pred = model(input_ids, attention_mask, do_evaluate=True)
             val_loss += loss_func(label, pred).item()
             num, den = global_pointer_f1_score(label, pred)
             total_n += num

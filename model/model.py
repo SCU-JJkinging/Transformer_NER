@@ -10,6 +10,7 @@ from transformers import BertModel
 import math
 from torch.nn import functional as F
 import argparse
+from loss_function.rdrop import RDropLoss
 
 parser = argparse.ArgumentParser()
 args = parser.parse_args()
@@ -215,27 +216,41 @@ class EfficientGlobalPointerNet(nn.Module):
         self.globalpointer = EfficientGlobalPointer(self.categories_size, head_size, hidden_size)
         self.bert = BertModel.from_pretrained(model_path)
         self.dropout_ops = nn.ModuleList([nn.Dropout(p=self.dropout_rate) for _ in range(self.dropout_num)])
+        self.dropout = nn.Dropout(p=config.rdrop_rate)
+        self.rdrop_loss = RDropLoss(reduction='mean')
 
-    def forward(self, input_ids, attention_mask):
-        bert_encoder = self.bert(input_ids, attention_mask=attention_mask)
-        bert_encoder = bert_encoder.last_hidden_state
-        logits = self.globalpointer(bert_encoder, mask=attention_mask)
+    def forward(self, input_ids, attention_mask, do_evaluate=False):
+        seq_out = self.bert(input_ids, attention_mask=attention_mask).last_hidden_state
         # multi-sample Dropout
         if self.config.is_multi_sample_dropout:
             logits = None
             for i, dropout_op in enumerate(self.dropout_ops):
                 if i == 0:
-                    bert_encoder = dropout_op(bert_encoder)
+                    bert_encoder = dropout_op(seq_out)
                     logits = self.globalpointer(bert_encoder, mask=attention_mask)
                 else:
-                    tmp_bert_encoder = dropout_op(bert_encoder)
+                    tmp_bert_encoder = dropout_op(seq_out)
                     tmp_logits = self.globalpointer(tmp_bert_encoder, mask=attention_mask)
                     logits += tmp_logits
             if self.config.is_avg:
-                return logits/len(self.dropout_ops)
+                return logits / len(self.dropout_ops)
             else:
                 return logits
+        # R-drop
+        elif self.config.is_R_drop:
+            seq_out1 = self.dropout(seq_out)
+            logits1 = self.globalpointer(seq_out1, mask=attention_mask)
+            if self.config.rdrop_coef > 0 and not do_evaluate:
+                seq_out2 = self.bert(input_ids, attention_mask=attention_mask).last_hidden_state
+                seq_out2 = self.dropout(seq_out2)
+                logits2 = self.globalpointer(seq_out2, mask=attention_mask)
+
+                kl_loss = self.rdrop_loss(logits1, logits2)
+            else:
+                kl_loss = 0.0
+            return logits1, kl_loss
         else:
+            logits = self.globalpointer(seq_out, mask=attention_mask)
             return logits
 
 
@@ -536,8 +551,8 @@ class BertSpanForNerV2(nn.Module):
         self.device = device
         self.bert = BertModel.from_pretrained(self.model_path)
         self.dropout = nn.Dropout(p=0.1)
-        self.start_fc = nn.Linear(self.hidden_size, 2*self.num_labels)
-        self.end_fc = nn.Linear(self.hidden_size, 2*self.num_labels)
+        self.start_fc = nn.Linear(self.hidden_size, 2 * self.num_labels)
+        self.end_fc = nn.Linear(self.hidden_size, 2 * self.num_labels)
 
     def forward(self, input_ids, attention_mask=None, start_positions=None, end_positions=None):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
